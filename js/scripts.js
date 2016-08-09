@@ -3,6 +3,9 @@ $("#sb").click(function() {
   $("body").addClass("sb");
   $("li").removeClass();
   $(this).addClass("active");
+  $("div.navbar").removeClass("navbar-default");
+  $("div.navbar").addClass("navbar-inverse");
+  $(".sb h1").text("Sackville Baggins' Menu");
 });
 
 $("#csb").click(function() {
@@ -10,6 +13,9 @@ $("#csb").click(function() {
   $("body").addClass("csb");
   $("li").removeClass();
   $(this).addClass("active");
+  $("div.navbar").removeClass("navbar-inverse");
+  $("div.navbar").addClass("navbar-default");
+  $(".csb h1").text("Central Shire Bistro Menu");
 });
 
 $("#tc").click(function() {
@@ -17,6 +23,9 @@ $("#tc").click(function() {
   $("body").addClass("tc");
   $("li").removeClass();
   $(this).addClass("active");
+  $("div.navbar").removeClass("navbar-default");
+  $("div.navbar").addClass("navbar-inverse");
+  $(".tc h1").text("Tuckburrow Commons Menu");
 });
 
 $(".col-md-6, .col-md-4").click(function(){

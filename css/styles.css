@@ -13,9 +13,49 @@ body {
   color: brown;
 }
 
+.tc h1 {
+  font-size: 4rem;
+}
+
+.tc h2,
+.tc h3 {
+  color: #4d2600;
+}
+
+.tc .clickable {
+  color: darkgoldenrod;
+}
+
+.tc .active-item .clickable {
+  color: goldenrod;
+}
+
 .sb {
-  background: aqua;
+  background-image: url("../img/sb_bg.jpg");
+  background-size: cover;
+  color: white;
+  text-shadow: 0 0 25px fuchsia;
+}
+
+.sb h2,
+.sb h3 {
   color: teal;
+  text-shadow: none;
+}
+
+.sb .clickable {
+  color: fuchsia;
+}
+
+.sb .clickable:hover {
+  text-decoration: none;
+  text-shadow: 0 0 15px fuchsia;
+}
+
+.sb .row {
+  background: #cff;
+  border: 1px solid white;
+  box-shadow: 0 0 25px 5px fuchsia;
 }
 
 .active-item {
@@ -56,13 +96,16 @@ h3 {
   text-decoration: underline;
 }
 
-
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 10rem;
   }
 
-  .row:nth-child(odd) {
+  .tc h1 {
+    font-size: 8rem;
+  }
+
+  .row {
     padding-bottom: 10px;
     border-bottom: 1px solid;
     margin-bottom: 10px;
@@ -73,7 +116,7 @@ h3 {
   }
 
   .col-md-6 {
-    height: 512px;
+    height: 580px;
     padding: 0 5%;
   }
 
@@ -85,5 +128,22 @@ h3 {
   .col-md-6:first-child {
     border-right: 1px solid;
   }
+
+  .sb .second-breakfast {
+    border-color: fuchsia;
+  }
+  .sb .col-md-6:first-child {
+    border-color: fuchsia;
+  }
+
+  .tc .row:nth-child(even),
+  .csb .row:nth-child(even) {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
 
 }
