@@ -2,22 +2,28 @@ $("#sb").click(function() {
   $("body").removeClass();
   $("body").addClass("sb");
   $("li").removeClass();
-  $("#sb").addClass("active");
+  $(this).addClass("active");
 });
 
 $("#csb").click(function() {
   $("body").removeClass();
   $("body").addClass("csb");
   $("li").removeClass();
-  $("#csb").addClass("active");
+  $(this).addClass("active");
 });
 
 $("#tc").click(function() {
   $("body").removeClass();
   $("body").addClass("tc");
   $("li").removeClass();
-  $("#tc").addClass("active");
+  $(this).addClass("active");
 });
+
+$(".col-md-6, .col-md-4").click(function(){
+  $(".col-md-6, .col-md-4").removeClass("active-item");
+  $(this).addClass("active-item");
+});
+
 
 $(".breakfast .clickable").click(function(event) {
   event.preventDefault();
