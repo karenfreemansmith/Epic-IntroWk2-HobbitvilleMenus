@@ -7,11 +7,30 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
   </head>
-  <body>
+  <body class="csb">
+    <!-- Navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand text-muted hidden-xs" href="#">Hobbitville Restaurants</a>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="csb" class="active"><a href="#">Central Shire Bistro</a></li>
+            <li id="sb"><a href="#">Sackville Baggins'</a></li>
+            <li id="tc"><a href="#">Tuckburrow Commons</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <h1>Menu Options</h1>
     <div class="container">
+      <!--Begin Morning-->
       <div class="row">
-
         <div class="col-md-4 breakfast">
           <h2>Breakfast</h2>
           <div class="initially-showing">
@@ -47,14 +66,67 @@
             <img class="img-responsive img-thumbnail" src="img/e-healthy.jpg" alt="">
           </div>
         </div>
+      </div>
+      <!--End Morning-->
 
+      <!--Begin Afternoon-->
+      <div class="row">
+        <div class="col-md-6 luncheon">
+          <h2>Luncheon</h2>
+          <div class="initially-showing">
+            <h3><span class="clickable">Click here</span> for healthier option...</h3>
+            <img class="img-responsive img-thumbnail" src="img/ln-unhealthy.jpg" alt="">
+          </div>
+          <div class="initially-hidden">
+            <h3><span class="clickable">Click here</span> for less healthy option...</h3>
+            <img class="img-responsive img-thumbnail" src="img/ln-healthy.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-6 afternoon-tea">
+          <h2>Afternoon Tea</h2>
+          <div class="initially-showing">
+            <h3><span class="clickable">Click here</span> for healthier option...</h3>
+            <img class="img-responsive img-thumbnail" src="img/at-unhealthy.jpg" alt="">
+          </div>
+          <div class="initially-hidden">
+            <h3><span class="clickable">Click here</span> for less healthy option...</h3>
+            <img class="img-responsive img-thumbnail" src="img/at-healthy.jpg" alt="">
+          </div>
+        </div>
+    </div>
+    <!--End Afternoon-->
+
+    <!--Begin Evening-->
+    <div class="row">
+      <div class="col-md-6 dinner">
+        <h2>Dinner</h2>
+        <div class="initially-showing">
+          <h3><span class="clickable">Click here</span> for healthier option...</h3>
+          <img class="img-responsive img-thumbnail" src="img/dn-unhealthy.jpg" alt="">
+        </div>
+        <div class="initially-hidden">
+          <h3><span class="clickable">Click here</span> for less healthy option...</h3>
+          <img class="img-responsive img-thumbnail" src="img/dn-healthy.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-6 supper">
+        <h2>Supper</h2>
+        <div class="initially-showing">
+          <h3><span class="clickable">Click here</span> for healthier option...</h3>
+          <img class="img-responsive img-thumbnail" src="img/sp-unhealthy.jpg" alt="">
+        </div>
+        <div class="initially-hidden">
+          <h3><span class="clickable">Click here</span> for less healthy option...</h3>
+          <img class="img-responsive img-thumbnail" src="img/sp-healthy.jpg" alt="">
+        </div>
       </div>
     </div>
-
-    <h1 class="footer"></h1>
-
+    <!--End Evening-->
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

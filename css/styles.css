@@ -1,21 +1,39 @@
 body {
-  margin: 0 auto;
+  margin: 70px auto;
   max-width: 1200px;
+}
+
+.csb {
   background: mistyrose;
+  color: indianred;
+}
+
+.tc {
+  background: tan;
+  color: brown;
+}
+
+.sb {
+  background: aqua;
+  color: teal;
 }
 
 h1 {
   margin: 10px 0;
   text-align: center;
   font-size: 5rem;
-  color: indianred;
   padding-bottom: 30px;
-  border-bottom: 1px solid indianred;
+  border-bottom: 1px solid;
 }
 
 h3 {
   font-weight: normal;
   font-size: 2rem;
+}
+
+h2,
+h3 {
+  color: black;
 }
 
 .footer{
@@ -34,17 +52,34 @@ h3 {
   text-decoration: underline;
 }
 
+
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 10rem;
   }
 
-  .row > div {
+  .row:nth-child(odd) {
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+  }
+
+  .col-md-4 {
     height: 418px;;
   }
 
-  .second-breakfast {
-    border-left: 1px solid indianred;
-    border-right: 1px solid indianred;
+  .col-md-6 {
+    height: 512px;
+    padding: 0 5%;
   }
+
+  .second-breakfast {
+    border-left: 1px solid;
+    border-right: 1px solid;
+  }
+
+  .col-md-6:first-child {
+    border-right: 1px solid;
+  }
+
 }
