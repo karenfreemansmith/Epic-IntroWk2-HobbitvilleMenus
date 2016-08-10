@@ -1,3 +1,16 @@
+//reservations
+$(document).ready(function() {
+  $(".before form").submit(function(event) {
+    event.preventDefault();
+    $(".meal").text($("#meal").val());
+    $(".day").text($("input#day").val());
+    $(".location").text($("#location").val());
+    $(".after").show();
+    $(".before").hide();
+  });
+});
+
+//navigation menu selections
 $("#sb").click(function() {
   $("body").removeClass();
   $("body").addClass("sb");

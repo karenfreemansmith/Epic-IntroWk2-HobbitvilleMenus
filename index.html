@@ -28,6 +28,7 @@
     </div>
 
     <h1>Central Shire Bistro Menu</h1>
+    <h2><a href="#" class="clickable" data-toggle="modal" data-target="#reservation">Make a Reservation</a></h2>
     <div class="container">
       <!--Begin Morning-->
       <div class="row">
@@ -124,6 +125,58 @@
       </div>
     </div>
     <!--End Evening-->
+
+    <div id="reservation" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header before">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Make a Reservation</h4>
+          </div>
+          <div class="modal-header after">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Reservaion Confirmation</h4>
+          </div>
+          <div class="modal-body after">
+            <p><strong>Thank you for your reservation!</strong></p>
+            <p>We look forward to serving you <span class="meal"></span> on <span class="day"></span> at the <span class="location"></span>.</p>
+          </div>
+          <div class="modal-body before">
+            <form>
+              <div class="form-group">
+                <label for="location">Choose a Location: </label>
+                <select class="form-control" id="location">
+                  <option>Central Shire Bistro</option>
+                  <option>Sackville Baggins'</option>
+                  <option>Tuckborrow Commons</option>
+                </select>
+                <div class="form-group">
+                  <label for="day">Date of reservation:</label>
+                  <input id="day" class="form-control" type="date">
+                </div>
+                <div class="form-group">
+                  <label for="meal">Choose a Location: </label>
+                  <select class="form-control" id="meal">
+                    <option>Breakfast</option>
+                    <option>Second Breakfast</option>
+                    <option>Elevenses</option>
+                    <option>Luncheon</option>
+                    <option>Afternoon Tea</option>
+                    <option>Dinner</option>
+                    <option>Supper</option>
+                  </select>
+              </div>
+              <button type="submit" class="btn">Reserve A Spot Now!</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
