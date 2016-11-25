@@ -1,20 +1,23 @@
-# [Hobitville Restaurants](http://karenfreemansmith.github.io/healthy-choices)
-![project screenshot](/img/screenshot.jpg)
+# Hobbitville Restaurants
+Version 0.0.2: August 10, 2016
+by [Karen Freeman-Smith](https://karenfreemansmith.github.io), [Zachary Matthewstearn](https://zacharymatthewstearn.github.com), and [Adam Gorbahn](https://github.com/Pyrrus)
 
-__Version 2: August 10, 2016__
+### Technologies Used
+HTML, CSS, Bootstrap, JavaScript, jQuery
 
-## by [Karen Freeman-Smith](https://karenfreemansmith.github.com), [Zachary Matthewstearn](https://zacharymatthewstearn.github.com), and [Adam Gorbahn](https://github.com/Pyrrus)
+![screenshot of project running](screenshot.png)
 
-### Description
-__* This restaurant menu features a different look and feel for each of our 3 Hobitville Restaurants, each menu also lets you choose between healthy and indulgent meals. Version 2 adds a reservation form.*__
+## Description
+*[Epicodus](http://epicodus.com) Intro to Programming Week 2 Pair Project with Zachary Matthewstearn: Create a webpage that shows/hides images and allows changing backgrounds to explore basic jQuery functions. Added reservation form with Adam Gorbahn.*
 
-## Technologies Used
-HTML, CSS
+* Click on links to alternate between healthy and unhealthy meal choices
+* Click on menu items to change theme of menu
+* Click on "make a reservation" to see reservation form and response in modal window
 
 ## Setup/Installation
-* [View on Github Pages](https://karenfreemansmith.github.io/EpicIntroWk1-PetWebsite)
+* [View on Github Pages](https://karenfreemansmith.github.io/Epic-IntroWk2-HobbitvilleMenus)
 * _OR_
-* Clone diectory 
+* Clone directory
 * Open index.html in your favorite browser
 
 ## Support & Contact
@@ -26,4 +29,4 @@ For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
 ## Legal
 *Licensed under the GNU General Public License v3.0*
 
-Copyright (c) 2016 Copyright _[Karen Freeman-Smith](https://karenfreemansmith.github.io)_ All Rights Reserved.
+Copyright (c) 2016 Copyright _[Karen Freeman-Smith](https://karenfreemansmith.github.io), [Zachary Matthewstearn](https://zacharymatthewstearn.github.com), & [Adam Gorbahn](https://github.com/Pyrrus)_ All Rights Reserved.
